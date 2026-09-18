@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fff6f9;
+  --surface: #ffffff;
+  --surface-alt: #fbd9e6;
+  --text-primary: #1f0a13;
+  --text-secondary: #6b3648;
+  --border: #f3c3d6;
+  --bubble-user: #d6134f;
+  --bubble-user-text: #ffffff;
+  --bubble-bot: #ffffff;
+  --bubble-bot-text: #1f0a13;
+}
+
+.dark {
+  --bg: #180810;
+  --surface: #24101a;
+  --surface-alt: #341423;
+  --text-primary: #fbe7ee;
+  --text-secondary: #d79cb2;
+  --border: #4a1e30;
+  --bubble-user: #e8557c;
+  --bubble-user-text: #1f0a13;
+  --bubble-bot: #2e1420;
+  --bubble-bot-text: #fbe7ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--surface-alt);
+  border-radius: 999px;
+}
+
+.Toastify__toast {
+  font-family: var(--font-inter), sans-serif;
+  border-radius: 12px;
+}
